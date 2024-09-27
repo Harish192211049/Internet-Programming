@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>TRAVELOUGE</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"><b>MADARASI</b></a>
+                
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Explore</a>
+                        </li>
+                       
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+
+            
+        <style>
+            /* Custom Styles */
+            .hero {
+                position: relative;
+                height: 100vh;
+                overflow: hidden;
+                background: url('assets/video/video.mp4') no-repeat center center/cover;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .hero__content {
+                position: absolute;
+                text-align: center;
+                z-index: 1;
+                max-width: 80%;
+            }
+    
+            .hero__title {
+                font-size: 4rem;
+                font-weight: bold;
+                margin: 0;
+            }
+    
+            .hero__description {
+                font-size: 1.5rem;
+                margin: 20px 0;
+            }
+    
+            .hero__button {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+                border: none;
+                background-color: #ff6600;
+                color: #fff;
+                cursor: pointer;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+    
+            .discover {
+               
+                padding: 60px 0;
+                color: #fff;
+            }
+    
+            .discover__title {
+                font-size: 2.5rem;
+                margin-bottom: 40px;
+                text-align: center;
+                font-weight: bold;
+            }
+    
+            .discover__card {
+                position: relative;
+                overflow: hidden;
+                border-radius: 15px;
+                transition: transform 0.3s ease;
+            }
+    
+            .discover__card:hover {
+                transform: scale(1.05);
+            }
+    
+            .discover__card img {
+                width: 100%;
+                border-radius: 15px;
+                transition: opacity 0.3s ease;
+            }
+    
+            .discover__card:hover .discover__data {
+                opacity: 1;
+            }
+    
+            .discover__data {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                padding: 20px;
+                border-radius: 15px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+    
+            .contact {
+                background: #fff;
+                padding: 60px 0;
+                text-align: center;
+            }
+    
+            .contact__title {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+    
+            .contact__description {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+    
+            .contact__button {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+                border: none;
+                background-color: #ff6600;
+                color: #fff;
+                cursor: pointer;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+    
+            .footer {
+                background: #333;
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+ 
+    
+    
+        <!--==================== HERO ====================-->
+        <section class="hero" id="home">
+            <div class="hero__content">
+                <h1 class="hero__title">WELCOME!<br><b>LET US EXPLORE<br>SINGARA CHENNAI</b></h1>
+                <p class="hero__description">Experience the vibrant culture and scenic beauty of Chennai like never before.</p>
+                <a href="#discover" class="hero__button">Explore Now</a>
+            </div>
+            
+        </section>
+                
+            
+            <!--==================== ABOUT ====================-->
+           
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">More Information <br> About Chennai</h2>
+                        <p class="about__description"><b>Discover Chennai, where ancient temples meet bustling markets and pristine beaches. Dive into a sensory overload with spicy South Indian cuisine and vibrant cultural festivals. From Marina Beach’s golden sands to the rhythm of local life, Chennai is a kaleidoscope of experiences waiting to be explored</b>.
+                        </p>
+                        
+                        <a href="chennai-details.html" class="button">Explore</a>
+
+
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+
+            
+             <!--==================== DISCOVER ====================-->
+             <section class="discover section" id="discover">
+                <h2 class="section__title">Discover the most <br> attractive places in Chennai</h2>
+            
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <a href="https://www.google.com/maps/place/Arulmigu+Kapaleeswarar+Temple/@13.033865,80.2694572,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5267d95bbfba2d:0x1d81065dbb858e7a!8m2!3d13.033865!4d80.2716459" target="_blank">
+                                <img src="assets/img/discover1.jpg" alt="Kapaleeshwarar Temple" class="discover__img">
+                                <div class="discover__data">
+                                    <h2 class="discover__title">Kapaleeshwarar Temple</h2>
+                                </div>
+                            </a>
+                        </div>
+            
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <a href="https://www.google.com/maps/place/Arignar+Anna+Zoological+Park/@12.8773145,80.0785775,17z/data=!3m1!4b1!4m5!3m4!1s0x3a525c41898f40d9:0x45aaeb9dd3f92977!8m2!3d12.8773145!4d80.0807662" target="_blank">
+                                <img src="assets/img/discover2.jpg" alt="Vandaloor Zoo" class="discover__img">
+                                <div class="discover__data">
+                                    <h2 class="discover__title">Vandaloor Zoo</h2>
+                                </div>
+                            </a>
+                        </div>
+            
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <a href="https://www.google.com/maps/place/Marina+Beach/@13.0514194,80.2820936,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5267d95bbfba2d:0x9bbf787e13e98096!8m2!3d13.0514194!4d80.2842823" target="_blank">
+                                <img src="assets/img/discover3.jpg" alt="Marina Beach" class="discover__img">
+                                <div class="discover__data">
+                                    <h2 class="discover__title">Marina Beach</h2>
+                                </div>
+                            </a>
+                        </div>
+            
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <a href="https://www.google.com/maps/place/VR+Chennai/@13.0862474,80.2020196,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5260b3b2c95e29:0x83dc18071cf1bb47!8m2!3d13.0862474!4d80.2042083" target="_blank">
+                                <img src="assets/img/discover4.jpg" alt="VR Mall" class="discover__img">
+                                <div class="discover__data">
+                                    <h2 class="discover__title">VR Mall</h2>
+                                </div>
+                            </a>
+                        </div>
+            
+                        <!--==================== DISCOVER 5 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <a href="https://www.google.com/maps/place/Chennai+Central/@13.0826802,80.2707184,17z/data=!3m1!4b1!4m5!3m4!1s0x3a526699c424c90f:0x7ad3f3fe0c1d9d4e!8m2!3d13.0826802!4d80.2729071" target="_blank">
+                                <img src="assets/img/discover5.jpg" alt="Chennai Central" class="discover__img">
+                                <div class="discover__data">
+                                    <h2 class="discover__title">Chennai Central</h2>
+                                </div>
+                            </a>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+
+            
+            
+           
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Find out more with our video of the most beautiful and 
+                        pleasant places for you and your family.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title"><b>LET US EXPLORE</b> <br><b>MADARAS</b></h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+
+                            <div class="place__data">
+                                <h3 class="place__title">ADVENTURE</h3>
+                                
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                           
+                            <div class="place__data">
+                                <h3 class="place__title">CULTURE & ARTS</h3>
+                                
+                            </div>
+                        </div>
+
+                       
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                           
+
+                            <div class="place__data">
+                                <h3 class="place__title">BEACHES</h3>
+                                
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place6.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+
+                            <div class="place__data">
+                                <h3 class="place__title">FOOD</h3>
+                                
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place5.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+
+                            <div class="place__data">
+                                <h3 class="place__title">WILDLIFE</h3>
+                               
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/place4.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+
+                            <div class="place__data">
+                                <h3 class="place__title">FESTIVALS & EVENTS</h3>
+                                
+                            </div>
+                        </div>
+
+                        
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Pleasant and Affordable Stays</h2>
+                        <p class="about__description">Room stays in Chennai offer a blend of modern comfort and traditional hospitality, catering to both luxury and budget travelers. With options near iconic landmarks and beaches, guests can enjoy a convenient and memorable stay in the heart of the city."
+
+
+                        </p>
+                        <a href="Stay-details.html" class="button">Explore</a>
+
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/stay1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/stay2.jpg" alt="" class="about__img-two">
+                        </div>
+                        
+                    </div>
+
+                   
+                </div>
+            </section>
+
+          
+            
+
+        
+                    
+
+
+            <!--==================== SUBSCRIBE ====================-->
+            
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Share Your Review</h2>
+                        <p class="subscribe__description">
+                            We would love to hear your thoughts about the places visited in Chennai. Please share your feedback!
+                        </p>
+                        <form id="reviewForm" class="subscribe__form">
+                            <textarea id="reviewInput" name="review" placeholder="" class="subscribe__input subscribe__textarea" rows="4" required></textarea>
+                            <button type="submit" class="button">
+                                Submit
+                            </button>
+                        </form>
+                       
+                        
+                    </div>
+                </div>
+            </section>
+
+            
+            <script>
+                document.getElementById('reviewForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const reviewInput = document.getElementById('reviewInput').value;
+    const thankYouMessage = document.getElementById('thankYouMessage');
+
+    if (reviewInput.trim() === '') {
+        alert('Please enter your review before submitting.'); // Simple alert for error
+        return;
+    }
+    else {
+        alert('THANKYOU!  Your review has been successfully submitted....'); // Simple alert for error
+        return;
+    }
+
+    // Show the thank you message with a smooth fade-in effect
+    thankYouMessage.classList.add('show');
+
+    // Optionally, clear the form
+    document.getElementById('reviewForm').reset();
+
+    // Hide the thank you message after 3 seconds
+    setTimeout(function() {
+        thankYouMessage.classList.remove('show');
+    }, 3000);
+});
+                        
+
+            </script>
+        
+        
+        
+  
+
+            
+            
+            
+            <!--==================== SPONSORS ====================-->
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors1.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors2.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors3.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors4.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors5.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <p class="footer__description">Travel you choose the <br> destination, 
+                            we offer you the <br> experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Features</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Plan by Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Become a member</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; MADARASI 2024. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        
+    </body>
+</html>

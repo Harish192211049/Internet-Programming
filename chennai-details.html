@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Chennai Details</title>
+    <style>
+        body {
+            background-color: #e6e6fa; /* Lavender */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6d28d9; /* Rich Burgundy */
+            color: #fff;
+            padding: 1rem;
+        }
+        .header .nav__logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .about {
+            background-color: #dcedc8; /* Light Sage Green */
+            padding: 2rem 0;
+        }
+        .about__title {
+            color: #388e3c; /* Darker Sage Green */
+        }
+        .about__description {
+            color: #2c6b2f; /* Even Darker Sage Green */
+        }
+        .about__img-overlay {
+            border: 2px solid #388e3c; /* Darker Sage Green */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .details__location-section {
+            background-color: #ffe0b2; /* Soft Peach */
+            padding: 2rem 0;
+        }
+        .details__map iframe {
+            border-radius: 8px;
+        }
+        .place {
+            background-color: #f5f5f5; /* Light Gray */
+            padding: 2rem 0;
+        }
+        .place__title {
+            color: #ff5722; /* Deep Orange */
+        }
+        .place__card {
+            background-color: #fff;
+            border: 1px solid #ff5722; /* Deep Orange */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .place__card:hover {
+            transform: scale(1.05);
+        }
+        .place__title {
+            padding: 1rem;
+            font-size: 1.2rem;
+            color: #ff5722; /* Deep Orange */
+        }
+        footer {
+            background-color: #4a7f4c; /* Darker Sage Green */
+            padding: 1rem;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#about" class="nav__logo"><b>MADARASI</b></a>
+        </nav>
+    </header>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h1 class="section__title about__title"><b><strong>CHENNAI</strong></b></h1>
+                <p class="about__description">
+                    Discover Chennai, where ancient temples meet bustling markets and pristine beaches.
+                    Dive into a sensory overload with spicy South Indian cuisine and vibrant cultural festivals.
+                    From Marina Beach’s golden sands to the rhythm of local life, Chennai is a kaleidoscope of experiences waiting to be explored.
+                </p>
+            </div>
+
+            <div class="about__img">
+                <div class="about__img-overlay">
+                    <img src="assets/img/har1.jpg" alt="Image 1" class="about__img-one">
+                </div>
+
+                <div class="about__img-overlay">
+                    <img src="assets/img/har2.jpg" alt="Image 2" class="about__img-two">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== LOCATION ====================-->
+    <section class="details__location-section">
+        <div class="about__container container grid">
+            <div class="about__data">
+                <h1 class="section__title about__title"><b><strong>LOCATION</strong></b></h1>
+                <p class="about__description">
+                    Chennai, located on the southeastern coast of India, is the capital of Tamil Nadu.
+                    It's known for its rich cultural heritage, scenic beaches, and industrial significance.
+                    Landmarks include Marina Beach, Kapaleeshwarar Temple, and Fort St. George.
+                </p>
+                <div class="details__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="1050" height="500" style="border: none;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>           
+    </section>
+
+    <!--==================== PLACES ====================-->
+    <section class="place section" id="place">
+        <h2 class="section__title"><b>LET US EXPLORE</b> <br><b>MADARASI</b></h2>
+
+        <div class="place__container container grid">
+            <!-- Place cards with images -->
+            <div class="place__card">
+                <img src="assets/img/1.jpg" alt="Shore Temple" class="place__img">
+                <h3 class="place__title">SHORE TEMPLE</h3>
+            </div>
+
+            <div class="place__card">
+                <img src="assets/img/ip.jpg" alt="Bessy Beach" class="place__img">
+                <h3 class="place__title">BESSY BEACH</h3>
+            </div>
+
+            <div class="place__card">
+                <img src="assets/img/3.jpg" alt="Tower" class="place__img">
+                <h3 class="place__title">TOWER</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Madarasi. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        // Smooth Scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize Swiper for carousel effect
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Highlight navigation item based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLi = document.querySelectorAll('nav ul li');
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLi.forEach(li => {
+                li.classList.remove('active');
+                if (li.classList.contains(current)) {
+                    li.classList.add('active');
+                }
+            });
+        });
+
+        // Adding click event to place cards
+        const placeCards = document.querySelectorAll('.place__card');
+        placeCards.forEach(card => {
+            card.addEventListener('click', function () {
+                alert('You clicked on: ' + this.querySelector('.place__title').textContent);
+            });
+        });
+
+        // Lazy loading for Google Maps iframe
+        document.addEventListener("DOMContentLoaded", function() {
+            var map = document.querySelector("iframe");
+            map.setAttribute("loading", "lazy");
+        });
+    </script>
+</body>
+</html>

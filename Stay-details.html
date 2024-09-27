@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Details - Chennai</title>
+    <link rel="stylesheet" href="STYLE.css">
+    <!-- Remix Icon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e6e6fa; /* Lavender */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6d28d9; /* Rich Burgundy */
+            color: #fff;
+            padding: 1rem;
+        }
+        .header .nav__logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .stay-details {
+            background-color: #dcedc8; /* Light Sage Green */
+            padding: 2rem 0;
+        }
+        .section__title {
+            color: #388e3c; /* Darker Sage Green */
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .section__description {
+            color: #2c6b2f; /* Even Darker Sage Green */
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .booking__details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .booking__platform {
+            background-color: #fff;
+            border: 1px solid #388e3c; /* Darker Sage Green */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            text-align: center;
+            flex: 1 1 300px;
+        }
+        .platform__logo {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+        .platform__title {
+            font-size: 1.8rem;
+            color: #388e3c; /* Darker Sage Green */
+            margin-bottom: 0.5rem;
+        }
+        .platform__description {
+            font-size: 1rem;
+            color: #2c6b2f; /* Even Darker Sage Green */
+            margin-bottom: 1rem;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 6px;
+            color: #fff;
+            background-color: #ff5722; /* Deep Orange */
+        }
+        .button i {
+            margin-right: 0.5rem;
+        }
+        footer {
+            background-color: #4a7f4c; /* Darker Sage Green */
+            padding: 1rem;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><b>MADARASI</b></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="stay-details section" id="stay-details">
+            <div class="container">
+                <h1 class="section__title">BOOK YOUR STAY IN CHENNAI</h1>
+                <p class="section__description"><b>Discover the best platforms to book your stay. Check out these popular options and choose what suits you best:</b></p>
+
+                <div class="booking__details">
+                    <!-- Airbnb Section -->
+                    <div class="booking__platform">
+                        <img src="assets/img/14.jpg" alt="" class="sponsor__img">
+                        <h1 class="platform__title">Airbnb</h1>
+                        <p class="platform__description">Airbnb offers diverse accommodation options, from unique stays to luxury villas. Experience local culture and find your perfect spot in Chennai.</p>
+                        <a href="https://www.airbnb.co.in/s/Chennai--India" target="_blank" class="button">
+                            <i class="ri-home-smile-line"></i> Explore Airbnb
+                        </a>
+                    </div>
+
+                    <!-- MakeMyTrip Section -->
+                    <div class="booking__platform">
+                        <img src="assets/img/12.jpg" alt="MakeMyTrip Logo" class="platform__logo">
+                        <h2 class="platform__title">MakeMyTrip</h2>
+                        <p class="platform__description">From hotels to flights and complete holiday packages, MakeMyTrip offers a one-stop solution for your travel needs in Chennai.</p>
+                        <a href="https://www.makemytrip.com/hotels/chennai-hotels.html" target="_blank" class="button">
+                            <i class="ri-flight-takeoff-line"></i> Explore MakeMyTrip
+                        </a>
+                    </div>
+
+                    <!-- Agoda Section -->
+                    <div class="booking__platform">
+                        <img src="assets/img/agoda.jpg" alt="Agoda Logo" class="platform__logo">
+                        <h2 class="platform__title">Agoda</h2>
+                        <p class="platform__description">Agoda provides competitive rates on hotel bookings, perfect for those looking to save while enjoying their stay in Chennai.</p>
+                        <a href="https://www.agoda.com/city/chennai-in.html" target="_blank" class="button">
+                            <i class="ri-suitcase-line"></i> Explore Agoda
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Madarasi. All rights reserved.</p>
+    </footer>
+</body>
+</html>

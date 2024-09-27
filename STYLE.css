@@ -1,0 +1,122 @@
+/* General container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and navigation styling */
+.header {
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav__logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main section styling */
+.stay-details {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.section__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.section__description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.booking__details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Platform section styling */
+.booking__platform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.platform__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.platform__description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.button.solid {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+}
+
+.button.solid:hover {
+    background-color: #000000;
+}
+
+.button.outlined {
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #010a13;
+}
+
+.button.outlined:hover {
+    background-color: #000204e1;
+    color: #fff;
+}
+
+.button.rounded {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+.button.rounded:hover {
+    background-color: #218838;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
